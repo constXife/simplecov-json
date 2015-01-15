@@ -45,9 +45,7 @@ class SimpleCov::Formatter::JSONFormatter
     File.join(output_path, output_filename)
   end
   
-  def output_message(result)
-    "Coverage report generated for #{result.command_name} to #{output_filepath}. #{result.covered_lines} / #{result.total_lines} LOC (#{result.covered_percent.round(2)}%) covered."
-  end
+  def output_message(_result); end
   
 private
   
